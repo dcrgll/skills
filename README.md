@@ -70,8 +70,15 @@ Each skill lives in `skills/<name>/SKILL.md`.
 Currently:
 
 - **ship** — branch, commit, and open a PR for finished work
+- **what** — answer what a codebase is and how to operate it
+- **debug** — diagnose bugs with a tight feedback loop before fixing
+- **pr-review** — review a branch or PR on Standards and Spec axes
+- **tone-of-voice** — writing voice for PR copy, comments, and similar text
+- **create-skill** — author a new skill in this repo
 
-Add a new skill by creating `skills/<name>/SKILL.md`. After install, it is available through the `~/.cursor/skills` (and Codex/Claude) symlink.
+`ship`, `debug`, and `pr-review` all defer to **tone-of-voice** for human-facing writing.
+
+Add a new skill by creating `skills/<name>/SKILL.md`, or use **create-skill**. After install, it is available through the `~/.cursor/skills` (and Codex/Claude) symlink.
 
 ## Docs
 
