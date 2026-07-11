@@ -70,6 +70,9 @@ Each skill lives in `skills/<name>/SKILL.md`.
 Currently:
 
 - **ship** — branch, commit, and open a PR for finished work
+- **tone-of-voice** — writing voice for PR copy, comments, and similar text
+
+`ship` defers to **tone-of-voice** for human-facing writing.
 
 Add a new skill by creating `skills/<name>/SKILL.md`. After install, it is available through the `~/.cursor/skills` (and Codex/Claude) symlink.
 
