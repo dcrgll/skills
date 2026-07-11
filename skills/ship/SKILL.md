@@ -1,11 +1,14 @@
 ---
 name: ship
 description: Ship completed feature work to GitHub with a conventional branch, small precise commits, and short plain-English PR copy. Use when a feature is built and the user wants to get it onto GitHub, open a PR, or prepare work for review.
+disable-model-invocation: true
 ---
 
 # Ship
 
 Use this skill when a feature is built and the user wants to get it onto GitHub, for work or personal repositories.
+
+For PR descriptions and any other human-facing copy, follow [tone-of-voice](../tone-of-voice/SKILL.md).
 
 ## Start Here
 
@@ -116,7 +119,7 @@ Do not include trivial verification commands that CI already covers (e.g. `pnpm 
 gh pr create --draft --title "[SOT-3998] Add account settings" --body "$(cat <<'EOF'
 ## Summary
 
-Users can now manage account settings without leaving the app. This keeps preference updates closer to where users expect to make them.
+users can manage account settings without leaving the app, so preference updates sit where people expect them.
 
 ## Verification
 
