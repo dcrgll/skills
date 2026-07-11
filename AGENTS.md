@@ -78,6 +78,7 @@ Follow the project formatter and lint rules.
 ## React and Next.js
 
 - When working in React or Next.js apps, also follow [docs/REACT.md](docs/REACT.md).
+- For default library choices (styling, animation, schemas, forms, state, data fetching, UI, auth, URL state, icons, dates, charts, fake data, themes, captchas), follow [docs/PREFERRED_LIBRARIES.md](docs/PREFERRED_LIBRARIES.md).
 
 ## Testing and verification
 
