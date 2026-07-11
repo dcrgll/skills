@@ -77,7 +77,7 @@ Follow the project formatter and lint rules.
 
 ## React and Next.js
 
-- When working in React or Next.js apps, also follow `REACT.md`.
+- When working in React or Next.js apps, also follow [docs/REACT.md](docs/REACT.md).
 
 ## Testing and verification
 
