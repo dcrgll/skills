@@ -70,6 +70,7 @@ Each skill lives in `skills/<name>/SKILL.md`.
 Currently:
 
 - **ship** — branch, commit, and open a PR for finished work
+- **what** — answer what a codebase is and how to operate it
 
 Add a new skill by creating `skills/<name>/SKILL.md`. After install, it is available through the `~/.cursor/skills` (and Codex/Claude) symlink.
 
