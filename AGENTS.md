@@ -112,6 +112,8 @@ Keep the final response concise.
 
 ## PR instructions
 
+- Split work into separate PRs where appropriate.
+- Keep each PR as small as possible.
 - Title format: `[<ticket_number>] <Title>`.
 - Keep descriptions short, and use natural language.
 - Do not list every change in the description; explain what changed and why.
