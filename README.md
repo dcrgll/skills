@@ -70,6 +70,7 @@ Each skill lives in `skills/<name>/SKILL.md`.
 Currently:
 
 - **ship** — branch, commit, and open a PR for finished work
+- **what** — answer what a codebase is and how to operate it
 - **tone-of-voice** — writing voice for PR copy, comments, and similar text
 
 `ship` defers to **tone-of-voice** for human-facing writing.
