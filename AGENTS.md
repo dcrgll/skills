@@ -120,3 +120,4 @@ Keep the final response concise.
 - Do not list every change in the description; explain what changed and why.
 - Do not add "Generated with Claude Code", "Generated with Cursor", or AI co-author footers to PR descriptions.
 - Do not mark PRs as ready for review with `gh pr ready`; leave PRs in draft mode and let the user decide when to mark them ready.
+- Do not add "Generated with Claude Code", "Generated with Cursor", or AI co-author footers to commits.
