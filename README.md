@@ -71,9 +71,10 @@ Currently:
 
 - **ship** — branch, commit, and open a PR for finished work
 - **what** — answer what a codebase is and how to operate it
+- **debug** — diagnose bugs with a tight feedback loop before fixing
 - **tone-of-voice** — writing voice for PR copy, comments, and similar text
 
-`ship` defers to **tone-of-voice** for human-facing writing.
+`ship` and `debug` defer to **tone-of-voice** for human-facing writing.
 
 Add a new skill by creating `skills/<name>/SKILL.md`. After install, it is available through the `~/.cursor/skills` (and Codex/Claude) symlink.
 
