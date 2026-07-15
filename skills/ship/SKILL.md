@@ -99,7 +99,7 @@ Use this PR body format:
 ```markdown
 ## Summary
 
-<what changed and why>
+<what broke, the fix, why it matters — one short sentence each>
 
 ## Verification
 
@@ -109,9 +109,13 @@ Use this PR body format:
 <!-- NEXT_JS_LLM -->
 ```
 
-Explain the "what" from the end-user or developer perspective. Only include implementation details if they are not obvious from the diff.
+Keep the summary to three sentences, one per beat:
 
-Include a "why" unless the change is small and self-explanatory. Omit the "why" sparingly.
+1. what broke (or what was missing)
+2. the fix
+3. why it matters
+
+Write it from the end-user or developer perspective. Only include implementation details if they are not obvious from the diff. Skip the third sentence only when the why is already obvious from the first two.
 
 Do not include trivial verification commands that CI already covers (e.g. `pnpm run build`), but do include manual verification steps. If the PR changes a test, do not repeat the command to run that test. If you used an existing test to confirm behaviour did not change, include that test.
 
@@ -119,7 +123,21 @@ Do not include trivial verification commands that CI already covers (e.g. `pnpm 
 gh pr create --draft --title "[SOT-3998] Add account settings" --body "$(cat <<'EOF'
 ## Summary
 
-users can manage account settings without leaving the app, so preference updates sit where people expect them.
+### What
+Changing account preferences previously meant leaving the app for the web dashboard.
+
+This PR adds in-app account settings so users can view and update preferences without switching context.
+
+### How
+- Adds a new account settings screen in the app
+- Wires the screen into the existing navigation flow
+- Reuses existing preference update logic where possible
+- Adds loading, success, and error states for preference changes
+
+### Why
+Preference updates now sit where people expect them: inside the app.
+
+This reduces friction, keeps users in-flow, and avoids sending people to the web dashboard for a basic account task.
 
 ## Verification
 
